@@ -10,8 +10,9 @@ Track CPU time and memory allocation trends across benchmark runs with zero conf
 # From NuGet (once published)
 dotnet tool install -g BdnDashboard
 
-# From a local nupkg
-dotnet tool install -g BdnDashboard --add-source ./nupkg
+# From a local build
+dotnet pack src/BdnDashboard/BdnDashboard.csproj -c Release
+dotnet tool install -g BdnDashboard --add-source src/BdnDashboard/bin/Release
 ```
 
 ## Usage
