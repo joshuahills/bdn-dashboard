@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <!-- dotnet tool packaging -->
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>bdn-dashboard</ToolCommandName>
+
+    <!-- NuGet metadata -->
+    <PackageId>BdnDashboard</PackageId>
+    <Version>1.0.0</Version>
+    <Title>BdnDashboard</Title>
+    <Description>A dotnet tool that generates interactive HTML trend dashboards from BenchmarkDotNet JSON results. Tracks performance and memory allocation over time with Chart.js visualisations.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>benchmarkdotnet;benchmark;performance;dashboard;trend;dotnet-tool</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

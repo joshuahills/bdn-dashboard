@@ -1,0 +1,13 @@
+# BdnDashboard build output
+bin/
+obj/
+nupkg/
+
+# IDE
+.vs/
+*.user
+*.suo
+
+# OS
+Thumbs.db
+.DS_Store
